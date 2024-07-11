@@ -6,6 +6,6 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.daryl.mob.ui.HomeFragment"
+        android:name="com.daryl.mobstarterapp.ui.fragments.HomeFragment"
         android:label="HomeFragment" />
 </navigation>

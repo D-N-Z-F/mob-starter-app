@@ -1,13 +1,14 @@
-package com.daryl.mob.ui
+package com.daryl.mobstarterapp.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.daryl.mob.R
-import com.daryl.mob.databinding.FragmentHomeBinding
+import com.daryl.mobstarterapp.databinding.FragmentHomeBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
     override fun onCreateView(

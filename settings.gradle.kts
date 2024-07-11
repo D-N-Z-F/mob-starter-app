@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MOB"
+rootProject.name = "mob-starter-app"
 include(":app")

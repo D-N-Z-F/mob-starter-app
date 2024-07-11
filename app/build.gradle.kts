@@ -3,14 +3,15 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id("kotlin-kapt")
     id("androidx.navigation.safeargs.kotlin")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
-    namespace = "com.daryl.mob"
+    namespace = "com.daryl.mobstarterapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.daryl.mob"
+        applicationId = "com.daryl.mobstarterapp"
         minSdk = 28
         targetSdk = 34
         versionCode = 1
@@ -51,7 +52,16 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+    // Navigation & Fragment
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.fragment.ktx)
+
+    // Hilt Dependency Injection
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
+}
+
+kapt {
+    correctErrorTypes = true
 }

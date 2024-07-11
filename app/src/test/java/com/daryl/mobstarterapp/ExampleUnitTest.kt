@@ -1,4 +1,4 @@
-package com.daryl.mob
+package com.daryl.mobstarterapp
 
 import org.junit.Test
 
